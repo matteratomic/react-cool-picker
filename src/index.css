@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rc_text {
+  margin:0;
+  background:white;
+}
+
+.rc_text:before {
+  content:"";
+  width:100%;
+  height:100%;
+  display:block;
+  position:absolute;
+  top:0;
+ background:linear-gradient(to right,#fc466b, #3f5efb);
+  mix-blend-mode:screen;
+}
+
+[class*=blob] {
+ position:absolute;
+ mix-blend-mode:color;
+ animation:morph 8s ease-in-out infinite alternate;
+}
+
+.rc_blob1 {
+  width:74px;
+  height:64px;
+  top:18%;
+  left:32%;
+  background:#ff8c00;
+}
+
+.rc_blob2 {
+  width:74px;
+  height:64px;
+  top:43%;
+  left:72%;
+  background:cyan;
+}
+
+.rc_blob3 {
+  width:74px;
+  height:64px;
+  top:50%;
+  left:4%;
+  background:#007bbf;
+}
+
+.rc_blob4 {
+  width:74px;
+  height:64px;
+  top:51%;
+  left:42%;
+  background:brown;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 45% 64% 29% 75% / 63% 12% 27% 73%
+  }
+   20% {
+    border-radius: 72% 28% 54% 21% / 75% 34% 28% 77%
+  }
+   30% {
+    border-radius: 34% 47% 95% 14% / 55% 12% 75% 21%
+  }
+   40% {
+    border-radius: 82% 32% 54% 45% / 82% 95% 63% 22%
+  }
+   50% {
+    border-radius: 47% 74% 83% 21% / 31% 10% 83% 61%
+  }
+  60% {
+    border-radius: 84% 82% 37% 25% / 73% 84% 25% 71%
+  }
+  70% {
+    border-radius: 95% 34% 84% 47% / 84% 23% 18% 41%
+  }
+  80% {
+    border-radius: 18% 11% 32% 85% / 84% 41% 23% 74%
+  }
+  90% {
+    border-radius: 43% 57% 93% 15% / 24% 95% 69% 27%
+  }
+  100% {
+    border-radius: 96% 17% 24% 94% / 25% 95% 40% 19%
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "react-cool-ticker",
+  "version": "0.0.1",
+  "author": "Ian Macharia",
+  "description": "A simple and customizable ticker component for react",
+  "repository": "matteratomic/react-cool-ticker",
+  "source": "./src/index.ts",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "npx parcel build",
+    "watch": "npx parcel watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ticker",
+    "react",
+    "web"
+  ],
+  "types": "./dist/types.d.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/packager-ts": "2.0.0-nightly.1015",
+    "@parcel/transformer-typescript-types": "2.0.0-nightly.1015",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "autoprefixer": "^10.4.4",
+    "feather-icons-react": "^0.5.0",
+    "parcel": "^2.0.0-nightly.1013",
+    "postcss": "^8.4.12",
+    "postcss-preset-env": "^7.4.2",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
